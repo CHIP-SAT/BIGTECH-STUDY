@@ -1,6 +1,6 @@
 # 4. 전송 계층 - TCP와 UDP 
 ## 전송 계층 (Transport Layer)
-- 전송 계층은 **호스트 내 프로세스 간 논리적 통신(Process-to-Process Communication)**을 담당하는 계층이다.
+- 전송 계층은 **호스트 내 프로세스 간 논리적 통신**(Process-to-Process Communication)을 담당하는 계층이다.
 - 대표적인 프로토콜은 TCP와 UDP이다.
   - TCP : 신뢰성 있는 데이터 전송
   - UDP : 빠른 데이터 전송
