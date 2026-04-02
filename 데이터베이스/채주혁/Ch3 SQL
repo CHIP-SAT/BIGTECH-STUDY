@@ -1,0 +1,91 @@
+# DDL
+
+![image.png](attachment:5b325df6-a2e2-4869-84ad-e7280a07d99c:image.png)
+
+## CREATE
+
+데이터베이스에서 관리가 될 수 있는 대상을 정의
+
+- 테이블, 뷰, 인덱스, 사용
+
+![image.png](attachment:c31956e4-abd8-4541-a625-e194c84c585b:image.png)
+
+![image.png](attachment:20e21b3b-3ce4-495b-900f-12b9aadef4f4:image.png)
+
+## ALTER
+
+테이블에 새로운 필드를 추가하거나 기존의 필드를 수정/삭제
+
+![image.png](attachment:c875d264-5819-4ac1-af22-c4146b275df3:image.png)
+
+## DROP
+
+테이블이나 데이터베이스를 삭제할 수 있는 것
+
+## TRUNCATE
+
+![image.png](attachment:4aff5687-9e34-4218-8367-06093a8d6359:image.png)
+
+테이블의 구조를 유지한 채로 테이블의 모든 레코드를 삭제
+
+# DML
+
+## INSERT
+
+- 무결성 제약 조건을 지켜야 함
+    - NOT NULL 제약이 걸린 필드에 NULL을 저장 X
+    - UNIQUE 제약 조건에 중복값
+
+![image.png](attachment:e28b21fd-b655-4a0b-bae9-252fbb3901c8:image.png)
+
+## UPDATE
+
+![image.png](attachment:8ca07edc-f50e-48d8-b9f2-e0b5242e4f5c:image.png)
+
+![image.png](attachment:dd136fcb-0412-4f16-b220-803a88111329:image.png)
+
+## DELETE
+
+![image.png](attachment:ae722392-9556-486e-80f4-691152b86fda:image.png)
+
+- CASCADE
+    - 참조하는 데이터도 함께 수정
+- RESTRICT
+    - 수정/삭제 허용하지 않음
+
+## GROUP BY
+
+![image.png](attachment:63d9980b-2f99-47fa-9060-68c7bcf001bc:image.png)
+
+## HAVING
+
+GROUP BY절로 그룹화된 결과에 조건을 적용하기 위해 사용
+
+- WHERE : 그룹화되기 전 개별 레코드에 대한 조건식
+- HAVING : 그룹화된 레코드에 대한 조건식
+
+## ORDER BY
+
+![image.png](attachment:fb7bc48f-8b4c-40d8-96ba-a34a07b03e9a:image.png)
+
+## LIMIT
+
+![image.png](attachment:ad924d45-e4dc-4062-bda6-4ad601c7c681:image.png)
+
+> FROM → WHERHE → GROUP BY → HAVING → SELECT → ORDER BY → LIMIT
+> 
+
+# TCL
+
+![image.png](attachment:b1db03dd-43a3-4dea-a1d4-6836a1da6393:image.png)
+
+![image.png](attachment:76e8136f-f96c-4733-b450-e72b4d9ec61f:image.png)
+
+트랜잭션을 제어하는데 사용되는 SQL 명령어
+
+- COMMIT
+    - 데이터베이스에 작업 반영
+- ROLLBACK
+    - 작업 이전의 상태로 되돌림
+- SAVEPOINT
+    - 롤백의 기준점 설정
